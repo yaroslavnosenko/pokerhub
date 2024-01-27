@@ -1,6 +1,8 @@
-export const IcClubs = () => {
+import { SVGProps } from 'react'
+
+export const IcClubs = ({ ref, ...props }: SVGProps<SVGElement>) => {
   return (
-    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" {...props}>
       <circle
         r="3"
         cx="7"

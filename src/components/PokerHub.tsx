@@ -1,9 +1,9 @@
-import { Deck } from '@/components'
+import { Game } from '@/pages'
 
 export const PokerHub = () => {
   return (
-    <div className="p-8">
-      <Deck />
-    </div>
+    <>
+      <Game />
+    </>
   )
 }

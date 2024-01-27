@@ -1,21 +1,16 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss'
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        gray: {
-          100: '#000',
-          200: '#000',
-          300: '#000',
-          400: '#000',
-          500: '#000',
-          600: '#262728',
-          700: '#222324',
-          800: '#181920',
-          900: '#141516',
+        red: {
+          DEFAULT: '#fe6363',
         },
-        black: '#101112',
+        green: {
+          DEFAULT: '#44e19e',
+        },
       },
       fontFamily: {
         sans: [
@@ -26,7 +21,11 @@ export default {
           },
         ],
       },
+      gridTemplateColumns: {
+        deck: 'repeat(5, 4rem)',
+        hand: 'repeat(2, 4rem)',
+      },
     },
   },
   plugins: [],
-}
+} satisfies Config
